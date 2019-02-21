@@ -1,0 +1,21 @@
+@import "components/_base/variables.scss",
+		"components/_base/_base.scss",
+		"components/_base/mixins.scss";
+
+@import "components/_layouts/_l-footer.scss",
+		"components/_layouts/_l-grid.scss",
+		"components/_layouts/_l-header.scss";
+
+@import "components/_modules/_m-buttons.scss",
+		"components/_modules/_m-accordion.scss",
+    "components/_modules/_m-flip-counter.scss",
+    "components/_modules/_m-jackpot-area.scss",
+    "components/_modules/_m-main-bg-img.scss",
+    "components/_modules/_m-overlay.scss",
+    "components/_modules/_m-steps.scss",
+    "components/_modules/_m-payments.scss",
+		"components/_modules/_m-components.scss";
+
+@import "components/_states/_s-accordion.scss";
+
+@import	"mediaQueries";

@@ -1,0 +1,111 @@
+i.fas {
+    &.fa-times {
+        transform: rotate(45deg);
+        -webkit-transition: .4s all ease;
+        transition: .4s all ease;
+    }
+}
+
+.payments {
+    margin-top: .5em;
+
+    li {
+        background-color: $blueDark10;
+        border: 2px solid #110540;
+        padding: 1rem;
+        padding-left: 25px;
+
+        &:nth-child(5) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &:last-child {
+            background-color: transparent;
+            border: none;
+        }
+
+        & .logo {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 21px;
+            background-image: url(payments_sprite.png);
+
+            @each $paymentMethod,
+            $bgPosition,
+            $widthElem in $paymentsSM {
+                &.#{$paymentMethod} {
+                    background-position: #{$bgPosition};
+                    width: #{$widthElem};
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .payments {
+        li {
+            width: 50%;
+
+            & .logo {
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .payments {
+        display: flex;
+        align-items: center;
+        margin: .5em 0;
+
+        li {
+            padding: .5rem .3rem;
+
+            &:last-child {
+                padding-top: .3rem;
+                margin-left: 2em;
+            }
+
+            & .logo {
+                height: 1rem;
+
+                @each $paymentMethod,
+                $bgPosition,
+                $widthElem in $paymentsT {
+                    &.#{$paymentMethod} {
+                        background-position: #{$bgPosition};
+                        width: #{$widthElem};
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .payments {
+        li {
+            padding: .5rem .3rem;
+
+            &:last-child {
+                margin-left: 2em;
+            }
+
+            & .logo {
+                height: 1.5rem;
+
+                @each $paymentMethod,
+                $bgPosition,
+                $widthElem in $paymentsDT {
+                    &.#{$paymentMethod} {
+                        background-position: #{$bgPosition};
+                        width: #{$widthElem};
+                    }
+                }
+            }
+        }
+    }
+}

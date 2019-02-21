@@ -1,0 +1,15 @@
+header {
+    .title {
+      font-size: 1.2em;
+    }
+    & div {
+        @include flex;
+        align-items: center;
+
+        img {
+            height: 23px;
+            margin-right: 1em;
+        }
+    }
+
+}

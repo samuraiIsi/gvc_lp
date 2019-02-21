@@ -1,0 +1,161 @@
+.height-100 {
+    height: 100%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.clearfix {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fs2 {
+    font-size: 1.7em;
+}
+
+.fs10 {
+    font-size: 10px;
+}
+
+.fs1_2 {
+    font-size: 1.2em;
+}
+
+.uppercaseLetter {
+    text-transform: uppercase;
+}
+
+.capitalizeLetter {
+    text-transform: capitalize;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-black {
+    background: #000;
+}
+
+.bg-blue-dark-20 {
+    background-color: $blueDark20;
+}
+
+.bg-blue-dark-14 {
+    background-color: $blueDark14;
+}
+
+.bg-blue-dark-55 {
+    background-color: $blueLight55;
+}
+
+.pink-dark46 {
+    color: $pinkDark46;
+}
+
+.bg-purple-dark-27 {
+    background-color: $purpleDark27;
+}
+
+.bg-purple-dark-20 {
+    background-color: $purpleDark27;
+}
+
+.bg-blue-dark-10 {
+    background-color: $blueDark10;
+}
+
+.fit {
+    max-width: 100%;
+}
+
+.mx-auto {
+    margin-left: auto;
+}
+
+.mr-auto,
+.mx-auto {
+    margin-right: auto;
+}
+
+.my0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mr10 {
+    margin-right: 1rem;
+}
+
+.px0 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.pl0 {
+    padding-left: 0;
+}
+
+.p10 {
+    padding: 10px;
+}
+
+.py10 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.pt2 {
+    padding-top: 2rem;
+}
+
+.px30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.list-reset {
+    list-style: none;
+    padding-left: 0;
+}
+
+.font-family-smoothing {
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .no-M {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .no-DT {
+        display: none;
+    }
+}

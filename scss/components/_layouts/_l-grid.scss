@@ -1,0 +1,51 @@
+.flex {
+    @include flex;
+}
+
+.flex-auto {
+    @include flex-auto;
+}
+
+.flex-column {
+    @include flex-column;
+}
+
+.flex-wrap {
+    @include flex-wrap;
+}
+
+.flex-grow-1 {
+    @include flex-grow-1;
+}
+
+.justify-between {
+    @include justify-between;
+}
+
+.items-center {
+    @include items-center;
+}
+
+.row {
+    padding: 0;
+
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+.main {
+    flex: 1;
+}
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}

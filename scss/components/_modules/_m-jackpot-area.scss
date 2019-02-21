@@ -1,0 +1,29 @@
+.jackpotArea {
+    font-size: 0.9em;
+    background-color: $blueDark9;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    &__text {
+        width: 30%;
+        padding: 0.8rem 0 .3rem .8rem;
+    }
+    &__image {
+        width: 20%;
+    }
+    &__counter-ticker {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .jackpotArea {     
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .jackpotArea {
+        font-size: 15px;
+    }
+}

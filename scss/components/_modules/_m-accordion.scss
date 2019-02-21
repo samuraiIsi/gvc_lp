@@ -1,0 +1,31 @@
+.accordion {
+    font-size: .8em;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-weight: 700;
+    background-color: $purpleDark20;
+}
+
+.panel {
+    padding: 0 10px 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: $blueDark20;
+    font-size: .7em;
+
+    & li {
+        margin-bottom: .5em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .accordion, .panel {
+        font-size: .8em;
+    }
+}

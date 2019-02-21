@@ -1,0 +1,34 @@
+/* Text Styles */
+$textColor: #fff;
+
+/* Colors */
+$blueDark20: #211551;
+$blueDark14: #110540;
+$pinkDark46: #ed008c;
+$purpleDark27: #352a61;
+$purpleDark26: #2d1e69;
+$purpleDark20: #211451;
+$blueDark10: #0d0431;
+$bgJackpotTemporal: #080514;
+$blueLight55: #3f74d9; 
+$bgcountertickerNumbers: #190c32; 
+$blueDark9: #0a0428; 
+$bgBlueDark12: #001f3d; 
+$grey50: #707a8f;
+$blueDark30: #0f4f88; 
+$purpleDark20: #211551;
+
+/* BackGrounds */
+$BgBodyMobile: url('M_Bg.png');
+$BgBodyDesktop: url('DT_Bg.png');
+
+/* Payments */
+$paymentsSM: (visa, 0 0, 50px), (neteller, -55px 0, 130px), (skrill, -165px 0, 90px), (paypal, -260px 0, 80px), (paysafecard, -350px 0, 135px), (entropay, -509px 0, 101px);
+$paymentsT: (visa, 0 0, 35px), (neteller, -3.2rem 0, 4.5rem), (skrill, -9rem 0, 2.2rem), (paypal, -12.5rem 0, 3.2rem), (paysafecard, -17rem 0, 6rem), (entropay, -24rem 0, 5rem);
+$paymentsDT: (visa, 0 0, 55px), (neteller, -5rem 0, 6.5rem), (skrill, -13rem 0, 4.2rem), (paypal, -18.5rem 0, 5.2rem), (paysafecard, -25rem 0, 10rem), (entropay, -36rem 0, 8rem);
+
+/* Flipping Counter */
+$flipColour: #000;
+$flipColourDark: lighten($flipColour, 35%);
+$textColour: $textColor;
+$textColourDark: darken($textColour, 35%);

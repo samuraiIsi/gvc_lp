@@ -1,0 +1,42 @@
+.overlay {
+    padding-bottom: 4em;
+
+    &__tiny-overlay {
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.7);
+        color: #f1f1f1;
+        font-size: .4em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .overlay {
+        &.container {
+            padding: 1em 0 4em 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) { 
+    .overlay {
+        padding-bottom: 0;
+
+        & div:first-childc>div {
+            margin-left: 40%;
+            width: 60%;
+        }
+
+        &__tiny-overlay {
+            font-size: .3em;
+        }
+
+        &__overlay-text {
+            float: right;
+            z-index: 5;
+
+            & h1 {
+              margin-bottom: .5em;
+            }
+        }
+    }
+}

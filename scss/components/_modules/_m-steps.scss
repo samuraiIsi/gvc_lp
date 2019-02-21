@@ -1,0 +1,129 @@
+.steps {
+    @include flex-column;
+
+    &__line {
+        height: 2em;
+        border-left: solid 2px $pinkDark46;
+        margin: 1em 0 1rem 2em;
+    }
+
+    &__step a {
+        text-decoration: none;
+        color: #fff;
+        & .steps__step-number {
+            font-size: 2.2em;
+            float: left;
+            width: 1.8em;
+            line-height: 1.8em;
+            border-radius: 50%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin-right: 15px;
+            background-color: $bgBlueDark12;
+        }
+
+        & div:nth-child(2) {
+            @include flex-column;
+
+            &>p {
+                font-size: 1em;
+                margin: 0 0 0.2em 0;
+                @include flex;
+                @include flex-column;
+            }
+
+            & p:nth-child(1) {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            & p:nth-child(2) {
+                font-size: .7em;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .steps {
+        @include justify-between;
+        @include flex-row;
+        margin: 0 auto;
+        margin-top: 1em;
+
+        li {
+            &:nth-child(even) {
+                width: 12.5%;
+            }
+        }
+
+        &__line {
+            width: 80%;
+            height: 0;
+            border-top: solid 2px #fff;
+            margin: 55% 0 0 0;
+        }
+
+        &__step a {
+            &:nth-child(even) {
+                width: 12.5%;
+            }
+            @include flex;
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+
+            & .steps__step-number {
+                margin-right: 0;
+                margin-bottom: .3em;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                font-size: 40px;
+            }
+
+            & div:nth-child(2) {
+                & p {
+                    text-align: center;
+                }
+
+                & p:nth-child(2) {
+                    font-size: .6em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .steps {
+        @include flex-row;
+
+        &__line {
+            margin: 35% 0 0 0;
+        }
+
+        &__step a {
+            @include flex;
+            @include flex-row;
+           
+            & div.steps__step-number {
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            & div:nth-child(2) {
+                margin-left: .3em;
+
+                & p {
+                    text-align: left;
+                    font-size: 1.5rem;
+                }
+
+                & p:nth-child(2) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

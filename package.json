@@ -1,0 +1,35 @@
+{
+  "name": "gvc-lp",
+  "version": "1.0.0",
+  "description": "Responsive Page",
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^2.3.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^1.5.2",
+    "node-sass": "^4.11.0"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "http-server ./dist -a localhost -p 8000 -P http://content.iivt.com/ | gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuraiIsi/gvc_lp.git"
+  },
+  "keywords": [],
+  "author": "IMG",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "http-server": "^0.11.1"
+  }
+}

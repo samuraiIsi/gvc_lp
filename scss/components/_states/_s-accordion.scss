@@ -1,0 +1,12 @@
+.accordion {
+    &:hover,
+    &--active {
+        background-color: $purpleDark26;
+    }
+
+    &--active {
+        & i.fas.fa-times {
+            transform: rotate(0);
+        }
+    }
+}

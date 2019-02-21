@@ -1,0 +1,27 @@
+.btn {
+    border-radius: 2px;
+    &-no-M {
+        display: none;
+    }
+    &-legal {
+        max-width: 100px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .btn {
+        padding: 10px 15px;
+        font-size: .7em;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+
+        &-success {
+            background-color: #4eab38;
+            border: 0;
+            cursor: pointer;
+        }
+    }
+}
