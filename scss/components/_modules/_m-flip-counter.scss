@@ -16,6 +16,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: $textColour;
 }
@@ -29,7 +31,10 @@
     left: 0;
     top: 0;
     border-radius: 4px 4px 0 0;
+    -ms-transform: 50% 100%;
+    -webkit-transform: 50% 100%;
     transform-origin: 50% 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
 
@@ -42,14 +47,20 @@
     &.front::before,
     &.under::before {
         top: 100%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 
     &.back {
+        -ms-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
 
         &::before {
             top: 100%;
+            -ms-transform: translate(-50%, -50%) rotateZ(180deg);
+            -webkit-transform: translate(-50%, -50%) rotateZ(180deg);
             transform: translate(-50%, -50%) rotateZ(180deg);
         }
     }
@@ -78,12 +89,16 @@
 
 @keyframes flip-down-front {
     0% {
+        -ms-transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
         transform: rotateX(0deg);
         background-color: $flipColour;
         color: $textColour;
     }
 
     100% {
+        -ms-transform: rotateX(-180deg);
+        -webkit-transform: rotateX(-180deg);
         transform: rotateX(-180deg);
         background-color: $flipColourDark;
         color: $textColourDark;
@@ -92,12 +107,16 @@
 
 @keyframes flip-down-back {
     0% {
+        -ms-transform: rotateY(180deg) rotateX(0deg);
+        -webkit-transform: rotateY(180deg) rotateX(0deg);
         transform: rotateY(180deg) rotateX(0deg);
         background-color: $flipColourDark;
         color: $textColourDark;
     }
 
     100% {
+        -ms-transform: rotateY(180deg) rotateX(180deg);
+        -webkit-transform: rotateY(180deg) rotateX(180deg);
         transform: rotateY(180deg) rotateX(180deg);
         background-color: $flipColour;
         color: $textColour;
@@ -119,6 +138,8 @@
 .counter {
     position: relative;
     display: inline-block;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     perspective: 100vw;
     perspective-origin: 50% 50%;

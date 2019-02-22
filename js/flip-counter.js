@@ -30,11 +30,15 @@ function flip(newValue, oldValue, pos) {
     front.dataset['content'] = oldValue;
     back.dataset['content'] = newValue;
     under.dataset['content'] = newValue;
-    flap.forEach(function(f) { f.style.display = 'block' });
+    for (var i = 0; i < flap.length; i++) {
+        flap[i].style.display = 'block';
+    }
 
     setTimeout(function() {
         base.innerHTML = newValue;
-        flap.forEach(function(f) { f.style.display = 'none' });
+        for (var j = 0; j < flap.length; j++) {
+            flap[j].style.display = 'none';
+        }
     }, 350);
 }
 
